@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    
+
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
     <script>
         // Initialize Firebase
@@ -18,8 +19,9 @@
             messagingSenderId: "918699970408"
         };
         firebase.initializeApp(config);
-    </script>    
+    </script>
 </head>
+
 <body>
     <!--Formulario para Registro de Usuarios nuevos-->
     <h4>Registro de usuarios</h4>
@@ -27,14 +29,15 @@
     <input id="paswordRegister" type="password" placeholder="Ingresa contraseña">
     <button id="btnRegister">Enviar</button>
 
-   <!--Formulario para Login-->
+    <!--Formulario para Login-->
     <h4>Ingreso de usuarios</h4>
     <input id="emailLogin" type="email" placeholder="Ingresa email">
     <input id="passwordLogin" type="password" placeholder="Ingresa contraseña">
     <button id="btnLogin">Acceder</button>
-    
+    <br><br>
+    <button id="btnLogOut">Cerrar Sesión</button>
 
-    
     <script src="main.js"></script>
 </body>
+
 </html>
