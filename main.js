@@ -10,7 +10,6 @@ firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(e
   // ...
 });
 };
-
 document.getElementById('btnRegister').addEventListener('click', () => {registerFunction()});
 
 //Funcion para iniciar Sesion
