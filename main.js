@@ -34,7 +34,9 @@ const registerFunction = () => {
 
 };
 
+
 document.getElementById('btnRegister').addEventListener('click', () => { registerFunction() });
+
 
 //Funcion para iniciar Sesion
 const loginFunction = () => {

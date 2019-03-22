@@ -2,7 +2,7 @@
 
 ## Preámbulo
 
-Instagram, Snapchat, Twitter, Facebook, Twitch, Linkedin, etc. Las redes
+ Instagram, Snapchat, Twitter, Facebook, Twitch, Linkedin, etc. Las redes
 sociales han invadido nuestras vidas. Las amamos y/u odiamos, y muchos no podemos vivir sin ellas.
 
 Hay redes sociales de todo tipo y para todo tipo de intereses. Por ejemplo,
