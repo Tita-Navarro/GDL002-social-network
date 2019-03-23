@@ -7,7 +7,7 @@ const registerFunction = () => {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
-    // ...
+    window.alert('Ocurrió un error al iniciar registrarte \n\n'+'Código de error: '+errorCode+'\nMensaje: '+errorMessage);
   });
 };
 
