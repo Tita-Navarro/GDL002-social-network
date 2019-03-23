@@ -2,26 +2,26 @@
 //Funcion para registrar a los usuarios nuevos
 const registerFunction = () => {
   var email = document.getElementById('emailRegister').value;
-  var password = document.getElementById('paswordRegister').value;
+  var password = document.getElementById('passwordRegister').value;
 
   firebase.auth().createUserWithEmailAndPassword(email, password)
-  .then(function(){ //Función para verificar por correo electrónico a un usuario
-    var user = firebase.auth().currentUser;
+    .then(function () { //Función para verificar por correo electrónico a un usuario
+      var user = firebase.auth().currentUser;
 
-  user.sendEmailVerification().then(function() {
-    // Email sent.
-    window.alert('Se envió un email de verificación a tu correo electrónico')
-  }).catch(function(error) { 
-    // An error happened.
-    window.alert('error : ' + error.message);
-  });
-  })
-  .catch(function (error) {
-    // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    window.alert('Ocurrió un error al iniciar registrarte \n\n'+'Código de error: '+errorCode+'\nMensaje: '+errorMessage);
-  });
+      user.sendEmailVerification().then(function () {
+        // Email sent.
+        window.alert('Se envió un email de verificación a tu correo electrónico\nFavor de verificarlo')
+      }).catch(function (error) {
+        // An error happened.
+        window.alert('error : ' + error.message);
+      });
+    })
+    .catch(function (error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      window.alert('Ocurrió un error al iniciar registrarte \n\n' + 'Código de error: ' + errorCode + '\nMensaje: ' + errorMessage);
+    });
 };
 
 document.getElementById('btnRegister').addEventListener('click', () => { registerFunction() });
@@ -35,7 +35,7 @@ const loginFunction = () => {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
-    window.alert('Ocurrió un error al Iniciar Sesión \n\n'+'Código de error: '+errorCode+'\nMensaje: '+errorMessage);
+    window.alert('Ocurrió un error al Iniciar Sesión \n\n' + 'Código de error: ' + errorCode + '\nMensaje: ' + errorMessage);
   });
   console.log('Estoy adentro de la sesion');
 };
