@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase-auth.js"></script>
   <!--   <script src="/__/firebase/init.js"></script> -->
@@ -26,29 +27,42 @@
 </head>
 
 <body>
-      <!--Formulario para Registro de Usuarios nuevos-->
-    <section id="userRegister">
-        <h4>Registro de usuarios</h4>
-        <input id="emailRegister" type="email" placeholder="Ingresa email">
-        <input id="passwordRegister" type="password" placeholder="Ingresa contraseña">
-        <button id="btnRegister">Regístrate</button>
-    </section>
 
-    <!--Formulario para Login-->
-    <section id="userLogin">
-        <h4>Ingreso de usuarios</h4>
-        <input id="emailLogin" type="email" placeholder="Ingresa email">
-        <input id="passwordLogin" type="password" placeholder="Ingresa contraseña">
-        <button id="btnLogin">Iniciar sesión</button>
-    </section>
-    <br><br>
+    <div id="div-signin">
+        <!--Formulario para Registro de Usuarios nuevos-->
+        <section id="userRegister">
+            <h4>Registro de usuarios</h4>
+            <input id="emailRegister" type="email" placeholder="Ingresa email">
+            <input id="passwordRegister" type="password" placeholder="Ingresa contraseña">
+            <button id="btnRegister">Regístrate</button>
+        </section>
+    </div>
 
-    <section id="userLogout">
-        <button id="btnLogOut">Cerrar sesión</button>
-    </section>
-    <section id='wall'>
-        <h1>MURO de Mundo Dulce</h1>
-    </section>
+
+
+
+
+    <div id="div-register">
+        <!--Formulario para Login-->
+        <section id="userLogin">
+            <h4>Ingreso de usuarios</h4>
+            <input id="emailLogin" type="email" placeholder="Ingresa email">
+            <input id="passwordLogin" type="password" placeholder="Ingresa contraseña">
+            <button id="btnLogin">Iniciar sesión</button>
+        </section>
+    </div>
+
+
+
+
+    <div id="div-user" >
+        <section id="userLogout">
+            <button id="btnLogOut">Cerrar sesión</button>
+        </section>
+        <section id='wall'>
+            <h1>Bienvenido a Mundo Dulce</h1>
+        </section>
+    </div>
     <script src="main.js"></script>
 </body>
 

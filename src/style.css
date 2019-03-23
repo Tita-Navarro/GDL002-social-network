@@ -1,9 +1,12 @@
-.invisible {
-    display: none;
-    visibility: hidden;
-   }
+#div-signin{
+    background-color: blueviolet;
+}
 
-.visible {
-    visibility: visible;
-    position: static;
-   }
+#div-register{
+    background-color: coral;
+}
+
+#div-user{
+    background-color: aquamarine;
+    display: none;
+}

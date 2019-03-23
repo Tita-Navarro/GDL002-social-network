@@ -23,13 +23,27 @@ const registerFunction = () => {
       window.alert('Ocurrió un error al iniciar registrarte \n\n' + 'Código de error: ' + errorCode + '\nMensaje: ' + errorMessage);
     });
 };
-
 document.getElementById('btnRegister').addEventListener('click', () => { registerFunction() });
 
+//Función para comprobar el Estado del Usuario (Dentro o Fuera de la sesión)
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    document.getElementById("div-signin").style.display = "none";
+    document.getElementById("div-register").style.display = "none";
+    document.getElementById("div-user").style.display = "block";
+  } else {
+    // No user is signed in.
+    document.getElementById("div-signin").style.display = "block";
+    document.getElementById("div-register").style.display = "block";
+    document.getElementById("div-user").style.display = "none";
+  }
+});
 //Funcion para iniciar Sesion
 const loginFunction = () => {
   var email = document.getElementById('emailLogin').value;
   var password = document.getElementById('passwordLogin').value;
+  console.log('Estoy adentro de la sesion');
 
   firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
     // Handle Errors here.
@@ -37,10 +51,10 @@ const loginFunction = () => {
     var errorMessage = error.message;
     window.alert('Ocurrió un error al Iniciar Sesión \n\n' + 'Código de error: ' + errorCode + '\nMensaje: ' + errorMessage);
   });
-  console.log('Estoy adentro de la sesion');
 };
 document.getElementById('btnLogin').addEventListener('click', () => { loginFunction() });
 
+//Función para Cerrar Sesión
 const logoutFunction = () => {
   firebase.auth().signOut().then(function () {
     // Sign-out successful.
