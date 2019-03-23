@@ -1,0 +1,9 @@
+.invisible {
+    display: none;
+    visibility: hidden;
+   }
+
+.visible {
+    visibility: visible;
+    position: static;
+   }

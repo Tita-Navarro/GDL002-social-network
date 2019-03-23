@@ -1,9 +1,22 @@
+
 //Funcion para registrar a los usuarios nuevos
 const registerFunction = () => {
   var email = document.getElementById('emailRegister').value;
   var password = document.getElementById('paswordRegister').value;
 
-  firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
+  firebase.auth().createUserWithEmailAndPassword(email, password)
+  .then(function(){ //Función para verificar por correo electrónico a un usuario
+    var user = firebase.auth().currentUser;
+
+  user.sendEmailVerification().then(function() {
+    // Email sent.
+    window.alert('Se envió un email de verificación a tu correo electrónico')
+  }).catch(function(error) { 
+    // An error happened.
+    window.alert('error : ' + error.message);
+  });
+  })
+  .catch(function (error) {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
@@ -12,20 +25,6 @@ const registerFunction = () => {
 };
 
 document.getElementById('btnRegister').addEventListener('click', () => { registerFunction() });
-
-//Función para verificar por correo electrónico a un usuario
-const emailVerificationFunction =  () => {
-  var user = firebase.auth().currentUser;
-
-  user.sendEmailVerification().then(function() {
-    // Email sent.
-    window.alert('Se envió la verificación')
-  }).catch(function(error) {
-    // An error happened.
-    window.alert('error : ' + error.message);
-  });
-}
-document.getElementById('btnEmailVerification').addEventListener('click', () => { emailVerificationFunction() })
 
 //Funcion para iniciar Sesion
 const loginFunction = () => {
@@ -39,7 +38,6 @@ const loginFunction = () => {
     window.alert('Ocurrió un error al Iniciar Sesión \n\n'+'Código de error: '+errorCode+'\nMensaje: '+errorMessage);
   });
   console.log('Estoy adentro de la sesion');
-
 };
 document.getElementById('btnLogin').addEventListener('click', () => { loginFunction() });
 
