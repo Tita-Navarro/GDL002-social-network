@@ -1,4 +1,5 @@
 
+
 //Funcion para registrar a los usuarios nuevos
 const registerFunction = () => {
   var email = document.getElementById('emailRegister').value;
@@ -72,5 +73,8 @@ const logoutFunction = () => {
   });
   console.log('Sali de la sesión');
 }
-
 document.getElementById('btnLogOut').addEventListener('click', () => { logoutFunction() });
+document.getElementById('btnBacktoStart').addEventListener('click', () => { logoutFunction() });
+
+
+//window.histoty.push.state y replate.state
