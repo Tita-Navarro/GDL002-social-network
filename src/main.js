@@ -31,11 +31,20 @@ firebase.auth().onAuthStateChanged(function(user) {
     // User is signed in.
     document.getElementById("div-signin").style.display = "none";
     document.getElementById("div-register").style.display = "none";
-    document.getElementById("div-user").style.display = "block";
+    document.getElementById("plsVerify").style.display = "block";
+    document.getElementById("div-user").style.display = "none";
+    console.log(user)
+    if(user.emailVerified != false){
+      document.getElementById("div-signin").style.display = "none";
+      document.getElementById("div-register").style.display = "none";
+      document.getElementById("plsVerify").style.display = "none";
+      document.getElementById("div-user").style.display = "block";
+    }
   } else {
     // No user is signed in.
     document.getElementById("div-signin").style.display = "block";
     document.getElementById("div-register").style.display = "block";
+    document.getElementById("plsVerify").style.display = "none";
     document.getElementById("div-user").style.display = "none";
   }
 });
