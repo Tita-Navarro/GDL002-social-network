@@ -1,0 +1,12 @@
+#div-signin{
+    background-color: blueviolet;
+}
+
+#div-register{
+    background-color: coral;
+}
+
+#div-user{
+    background-color: aquamarine;
+    display: none;
+}
