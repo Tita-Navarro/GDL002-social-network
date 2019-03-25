@@ -1,0 +1,24 @@
+
+<section id='wall'>
+    <h1>Bienvenido a Mundo Dulce</h1>
+</section>
+
+<div id="div-user" >
+    <section id="userLogout">
+        <button id="btnLogOut">Cerrar sesión</button>
+    </section>
+</div>
+<form>
+    <input type="text" placeholder="¡Hola!, compártenos algo">
+    <button>Publicar</button>
+</form>    
+
+
+<%for(let index in posts) {%>
+    <div class="posts">
+        <p> <%posts[index].text%> </p>
+        <button>Like</button>
+        <button>Editar</button>
+        <button>Eliminar</button>
+    </div>
+<%}%>
