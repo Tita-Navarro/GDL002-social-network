@@ -1,5 +1,4 @@
 
-
 //Funcion para registrar a los usuarios nuevos
 const registerFunction = () => {
   var email = document.getElementById('emailRegister').value;
@@ -77,4 +76,46 @@ document.getElementById('btnLogOut').addEventListener('click', () => { logoutFun
 document.getElementById('btnBacktoStart').addEventListener('click', () => { logoutFunction() });
 
 
+//FUNCION PARA AUTENTICAR CON FACEBOOK
+const authFacebookAccount = () => {
+  var provider = new firebase.auth.FacebookAuthProvider();
+
+  firebase.auth().signInWithPopup(provider).then(function(result) {
+    // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+    var token = result.credential.accessToken;
+    // The signed-in user info.
+    var user = result.user;
+    // ...
+  }).then(function(){
+    firebase.auth().signInWithRedirect(provider)
+  }).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    window.alert('Ocurrió un error al Iniciar Sesión \n\n' + 'Código de error: ' + errorCode + '\nMensaje: ' + errorMessage);
+    // The email of the user's account used.
+    var email = error.email;
+    window.alert('Ocurrió un error con email \n\n' + email);
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    window.alert('Ocurrió un error con credencial \n\n' + credential);
+    // ...
+  });
+}
+
+document.getElementById('FB').addEventListener('click', () => authFacebookAccount());
+
+//FUNCION PARA SALIR CON FACEBOOK
+const logOutFVB = () =>{
+  firebase.auth().signOut().then(function() {
+    // Sign-out successful.
+    console.log('cerre sesion de FB')
+  }).catch(function(error) {
+    // An error happened.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    window.alert('Ocurrió un error al Iniciar Sesión \n\n' + 'Código de error: ' + errorCode + '\nMensaje: ' + errorMessage);
+  });
+}
+document.getElementById('logoutFB').addEventListener('click', () => logOutFVB());
 //window.histoty.push.state y replate.state
