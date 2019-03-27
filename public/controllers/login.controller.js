@@ -1,7 +1,8 @@
-const controllers = {}; 
+const loginController = (rawTpl, outlet) => {
+    const tpl = templateEngine(rawTpl, {posts: []});  
+    outlet.innerHTML = tpl; 
 
-controllers.login = () => {
-    
+
 //Funcion para registrar a los usuarios nuevos
 const registerFunction = () => {
     var email = document.getElementById('emailRegister').value;
@@ -42,18 +43,4 @@ const registerFunction = () => {
     });
   };
   document.getElementById('btnLogin').addEventListener('click', () => { loginFunction() });
-}
-
-controllers.wall = () => {
-  //Función para Cerrar Sesión
-  const logoutFunction = () => {
-    firebase.auth().signOut().then(function () {
-      // Sign-out successful.
-    }).catch(function (error) {
-      // An error happened.
-    });
-    console.log('Sali de la sesión');
-  }
-  
-  document.getElementById('btnLogOut').addEventListener('click', () => { logoutFunction() });
 }

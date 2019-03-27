@@ -6,6 +6,8 @@ var Router = {
         this.mode = options && options.mode && options.mode == 'history' 
                     && !!(history.pushState) ? 'history' : 'hash';
         this.root = options && options.root ? '/' + this.clearSlashes(options.root) + '/' : '/';
+        this.outlet = options && options.outlet;
+        if(!this.outlet || !this.outlet.nodeName) throw new Error('The outlet element is necesary'); //
         return this;
     },
     getFragment: function() {
@@ -23,17 +25,17 @@ var Router = {
     clearSlashes: function(path) {
         return path.toString().replace(/\/$/, '').replace(/^\//, '');
     },
-    add: function(re, handler) {
-        if(typeof re == 'function') {
-            handler = re;
+    add: function(re, config) {
+        if(!(re instanceof RegExp)) {
+            config = re;
             re = '';
         }
-        this.routes.push({ re: re, handler: handler});
+        this.routes.push({ re: re, config: config});
         return this;
     },
     remove: function(param) {
         for(var i=0, r; i<this.routes.length, r = this.routes[i]; i++) {
-            if(r.handler === param || r.re.toString() === param.toString()) {
+            if(r.config === param || r.re.toString() === param.toString()) {
                 this.routes.splice(i, 1); 
                 return this;
             }
@@ -51,8 +53,14 @@ var Router = {
         for(var i=0; i<this.routes.length; i++) {
             var match = fragment.match(this.routes[i].re);
             if(match) {
+                this.outlet.innerHTML='loading...';
                 match.shift();
-                this.routes[i].handler.apply({}, match);
+                var _config = this.routes[i].config;
+                fetch(_config.templateUrl)
+                    .then((response)=> response.text())
+                    .then((tpl) => {
+                        _config.controller.apply({}, [tpl, this.outlet]);
+                    });
                 return this;
             }           
         }
