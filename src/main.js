@@ -33,7 +33,10 @@ firebase.auth().onAuthStateChanged(function(user) {
     document.getElementById("div-register").style.display = "none";
     document.getElementById("plsVerify").style.display = "none";
     document.getElementById("div-user").style.display = "block";
-    console.log(user)/*
+    let uid = user.uid;
+    
+    console.log(uid)/*
+
     if(user.emailVerified != false){
       document.getElementById("div-signin").style.display = "none";
       document.getElementById("div-register").style.display = "none";

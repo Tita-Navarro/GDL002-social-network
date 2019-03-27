@@ -1,20 +1,22 @@
 var database = firebase.database();
 
-/* /////////////PARA LLENAR BASE DE DATOS DE WALL
- const postTextFunction = () => {
+/* /////////////Funcion que PUBLICA EN TIEMPO REAL EN EL MURO///////////////////////////////////
+  const postTextFunction = () => {
     const postText = document.getElementById('postText').value;
-    let firebasePostText = firebase.database().ref('F/post/post1').push().set(postText);
-    return firebasePostText;
-}
-document.getElementById('submitBtn').addEventListener('click', ()=> postTextFunction()); */
+    let firebaseKey = firebase.database().ref('F/post/post1').push().getKey();
+    console.log(firebaseKey);
+    firebase.database().ref('F/post/post1/'+firebaseKey).set(postText);
 
-///////////////PARA PINTAR DESDE BASE DE DATOS EN EL MURO cambia en tiempo real de acuerdo a la DB
-    var firebasewallText = firebase.database().ref('F/post/post1').child('-LaxZbrGqBwAXXWFEU6x');
+    var firebasewallText = firebase.database().ref('F/post/post1').child(firebaseKey)
 
     firebasewallText.on('value', function(snapshot){
         document.getElementById('wallPost').value = snapshot.val();
     });
- //Funcion para guardar la informacion de un usuario
+}
+document.getElementById('submitBtn').addEventListener('click', ()=> postTextFunction());
+ 
+ */
+
 let userId = "AyinjqsKT1M2x9Q5797yXr88Bu62"
 let name = 'Paco'
 let email = 'paco@gmail.com'
@@ -54,7 +56,7 @@ function writeUserData(userId, name, email, imageUrl) {
         return firebase.database().ref().update(updates);
     }
 
-    //FUNCION PARA CREAR EL CONTENIDO DE WALL/POST/BODY
+    //FUNCION PARA CREAR EL CONTENIDO DE POST EN LA DB
     const createDataForPost = () => {
         let postText = document.getElementById('postText').value;
 
