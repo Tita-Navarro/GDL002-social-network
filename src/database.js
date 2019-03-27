@@ -1,21 +1,20 @@
 var database = firebase.database();
 
-/////////////PARA LLENAR BASE DE DATOS DE WALL
-/* const postTextFunction = () => {
+/* /////////////PARA LLENAR BASE DE DATOS DE WALL
+ const postTextFunction = () => {
     const postText = document.getElementById('postText').value;
     let firebasePostText = firebase.database().ref('F/post/post1').push().set(postText);
     return firebasePostText;
 }
-document.getElementById('submitBtn').addEventListener('click', ()=> postTextFunction());
+document.getElementById('submitBtn').addEventListener('click', ()=> postTextFunction()); */
 
-///////////////PARA PINTAR DESDE BASE DE DATOS EN EL MURO
-    var firebasewallText = firebase.database().ref('F/post/post1').child('-Lawzs8eMTaaJZKL2pcU');
+///////////////PARA PINTAR DESDE BASE DE DATOS EN EL MURO cambia en tiempo real de acuerdo a la DB
+    var firebasewallText = firebase.database().ref('F/post/post1').child('-LaxZbrGqBwAXXWFEU6x');
 
     firebasewallText.on('value', function(snapshot){
         document.getElementById('wallPost').value = snapshot.val();
     });
- */
-//Funcion para guardar la informacion de un usuario
+ //Funcion para guardar la informacion de un usuario
 let userId = "AyinjqsKT1M2x9Q5797yXr88Bu62"
 let name = 'Paco'
 let email = 'paco@gmail.com'
@@ -30,11 +29,8 @@ function writeUserData(userId, name, email, imageUrl) {
     });
   }
 
-  writeUserData (userId, name, email, imageUrl); 
+  writeUserData (userId, name, email, imageUrl);
 
-
-
-   
     //funcion para escribir un post nuevo base de datos user-post
     function writeNewPost(uid, username, picture, title, body) {
         // A post entry.
@@ -62,7 +58,7 @@ function writeUserData(userId, name, email, imageUrl) {
     const createDataForPost = () => {
         let postText = document.getElementById('postText').value;
 
-        //VARIABLES DE NEW POST
+        //Variables de un nuevo post
         let title = "some title"
         let body = postText;
         let picture = null;
@@ -71,3 +67,4 @@ function writeUserData(userId, name, email, imageUrl) {
         writeNewPost(userId, name, picture, title, body)
 }
 document.getElementById('submitBtn').addEventListener('click', ()=> createDataForPost());
+ 
