@@ -1,0 +1,24 @@
+{
+  "name": "GDL002-social-network",
+  "version": "1.0.0",
+  "description": "Instagram, Snapchat, Twitter, Facebook, Twitch, Linkedin, etc. Las redes\r sociales han invadido nuestras vidas. Las amamos y/u odiamos, y muchos no podemos vivir sin ellas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarinaEstefania/GDL002-social-network.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarinaEstefania/GDL002-social-network/issues"
+  },
+  "homepage": "https://github.com/MarinaEstefania/GDL002-social-network#readme",
+  "dependencies": {
+    "firebase": "^5.9.1",
+    "firebase-tools": "^6.5.0"
+  }
+}

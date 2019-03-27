@@ -31,15 +31,15 @@ firebase.auth().onAuthStateChanged(function(user) {
     // User is signed in.
     document.getElementById("div-signin").style.display = "none";
     document.getElementById("div-register").style.display = "none";
-    document.getElementById("plsVerify").style.display = "none";
-    document.getElementById("div-user").style.display = "block";
-    console.log(user)/*
+    document.getElementById("plsVerify").style.display = "block";
+    document.getElementById("div-user").style.display = "none";
+    console.log(user)
     if(user.emailVerified != false){
       document.getElementById("div-signin").style.display = "none";
       document.getElementById("div-register").style.display = "none";
       document.getElementById("plsVerify").style.display = "none";
       document.getElementById("div-user").style.display = "block";
-    } */
+    }
   } else {
     // No user is signed in.
     document.getElementById("div-signin").style.display = "block";
@@ -114,7 +114,7 @@ const logOutFVB = () =>{
     // An error happened.
     var errorCode = error.code;
     var errorMessage = error.message;
-    window.alert('Ocurrió un error al Cerrar sesión \n\n' + 'Código de error: ' + errorCode + '\nMensaje: ' + errorMessage);
+    window.alert('Ocurrió un error al Iniciar Sesión \n\n' + 'Código de error: ' + errorCode + '\nMensaje: ' + errorMessage);
   });
 }
 document.getElementById('logoutFB').addEventListener('click', () => logOutFVB());
