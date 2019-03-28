@@ -11,11 +11,9 @@
 #div-user{
     display: flex;
     background-color: aquamarine;
-    display: none;
 }
 
 #plsVerify{
     display: flex;
     background-color: rgb(255, 127, 165);
-    display: block;
 }

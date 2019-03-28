@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -8,10 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mundo Dulce</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase-auth.js"></script>
-  <!--   <script src="/__/firebase/init.js"></script> -->
-   <!--  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-database.js"></script>
     <script>
         // Initialize Firebase
         var config = {
@@ -27,51 +25,12 @@
 </head>
 
 <body>
+    <div id="router-outlet"></div>
 
-    <div id="div-signin">
-        <!--Formulario para Registro de Usuarios nuevos-->
-        <section id="userRegister">
-            <h4>Registro de usuarios</h4>
-            <input id="emailRegister" type="email" placeholder="Ingresa email">
-            <input id="passwordRegister" type="password" placeholder="Ingresa contraseña">
-            <button id="btnRegister">Regístrate</button>
-        </section>
-    </div>
-
-
-
-
-
-    <div id="div-register">
-        <!--Formulario para Login-->
-        <section id="userLogin">
-            <h4>Ingreso de usuarios</h4>
-            <input id="emailLogin" type="email" placeholder="Ingresa email">
-            <input id="passwordLogin" type="password" placeholder="Ingresa contraseña">
-            <button id="btnLogin">Iniciar sesión</button>
-        </section>
-    </div>
-
-
-    <div>
-         <section id="plsVerify">
-            <h1>Para Acceder, por favor Verificar tu correo electrónico</h1>
-            <!--  *******************AGREGAR BOTON REGRESAR (este boton no es el adecuado)**************** -->
-            <button id="btnBacktoStart">Regresar</button>
-        </section>
-    </div>
-    <div id="div-user" >
-        <section id="userLogout">
-            <button id="btnLogOut">Cerrar sesión</button>
-        </section>
-
-        <section id='wall'>
-            <h1>Bienvenido a Mundo Dulce</h1>
-        </section>
-    </div>
-    <button id="FB">FACEBOOK</button>
-    <button id="logoutFB">LogOut FACEBOOK</button>
-
+    <script src="libraries/router.js"></script>
+    <script src="libraries/template-engine.js"></script>
+    <script src="controllers/login.controller.js"></script>
+    <script src="controllers/wall.controller.js"></script>
     <script src="main.js"></script>
 </body>
 
