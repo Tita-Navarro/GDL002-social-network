@@ -28,6 +28,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   if(user){
     localStorage.setItem('loggedIn', user.email);  // localstorage: es una mini BD del navegador key:value - (Key, puede ser cualquier nombre, lo pongo yo)
     Router.navigate('/wall');
+    console.log(user);
   } else {
     localStorage.removeItem('loggedIn');
     Router.navigate('/login');

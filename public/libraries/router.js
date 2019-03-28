@@ -3,7 +3,7 @@ var Router = {
     mode: null,
     root: '/',
     config: function(options) {
-        this.mode = options && options.mode && options.mode == 'history' 
+        this.mode = options && options.mode && options.mode == 'history'
                     && !!(history.pushState) ? 'history' : 'hash';
         this.root = options && options.root ? '/' + this.clearSlashes(options.root) + '/' : '/';
         this.outlet = options && options.outlet;
@@ -62,7 +62,7 @@ var Router = {
                         _config.controller.apply({}, [tpl, this.outlet]);
                     });
                 return this;
-            }           
+            }
         }
         return this;
     },

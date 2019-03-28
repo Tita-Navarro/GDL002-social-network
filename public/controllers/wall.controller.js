@@ -1,10 +1,13 @@
-const wallController = (rawTpl, outlet) => {
 
+const wallController = (rawTpl, outlet) => {
+    firebase.auth().onAuthStateChanged(function(user) {
+        if(user){
+         const userId= user.uid;
     const again = () => {
         document.getElementById('btnLogOut').addEventListener('click', () => logoutFunction());
         document.getElementById('publishBtn').addEventListener('click', () => createPost());
     }
-   
+
     //Función para Cerrar Sesión
     const logoutFunction = () => {
         firebase.auth().signOut().then(function () {
@@ -13,19 +16,33 @@ const wallController = (rawTpl, outlet) => {
         // An error happened.
         });
         console.log('Sali de la sesión');
-    }    
-
-    //creacion del post
-    const createPost = () => {
-        const postText = document.getElementById('postText').value;
-        firebase.database().ref('/posts').push().set(
-            { text: postText }
-        );
     }
 
+    //creacion del post
+    console.log(userId);
+
+    const createPost = () => {
+        const postText = document.getElementById('postText').value;
+        // A post entry.
+        var postData = {
+         /*  author: username, */
+          uid: userId,
+          body: postText,
+        /*   title: title,
+          starCount: 0,
+          authorPic: picture */
+        };
+        // Get a key for a new Post.
+        var newPostKey = firebase.database().ref().child('posts').push().key;
+        // Write the new post's data simultaneously in the posts list and the user's post list.
+        var updates = {};
+        updates['/posts/' + newPostKey] = postData;
+        updates['/user-posts/' + userId + '/' + newPostKey] = postData;
+        return firebase.database().ref().update(updates);
+      }
 
     //para que aparezca el mas reciente primero
-    firebase.database().ref('/posts/').on('value', function(snapshot){
+    firebase.database().ref('/user-posts/' + userId + '/').on('value', function(snapshot){
         const posts = Object.keys(snapshot.val())
             .map(key => snapshot.val()[key])
             .reverse();
@@ -33,4 +50,7 @@ const wallController = (rawTpl, outlet) => {
         outlet.innerHTML = templateEngine(rawTpl, { posts });
         again();
     });
+        }
+      });
+
 }

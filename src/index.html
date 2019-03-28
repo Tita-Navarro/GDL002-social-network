@@ -6,24 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Mundo Dulce</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase-auth.js"></script>
-  <!--   <script src="/__/firebase/init.js"></script> -->
-   <!--  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script> -->
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyAFM1LQ38DF-ydFinuSApgtUrhFRmh37Qc",
-            authDomain: "red-social-595e4.firebaseapp.com",
-            databaseURL: "https://red-social-595e4.firebaseio.com",
-            projectId: "red-social-595e4",
-            storageBucket: "red-social-595e4.appspot.com",
-            messagingSenderId: "918699970408"
-        };
-        firebase.initializeApp(config);
-    </script>
 </head>
 
 <body>
@@ -37,10 +21,6 @@
             <button id="btnRegister">Regístrate</button>
         </section>
     </div>
-
-
-
-
 
     <div id="div-register">
         <!--Formulario para Login-->
@@ -56,7 +36,8 @@
     <div>
          <section id="plsVerify">
             <h1>Para Acceder, por favor Verificar tu correo electrónico</h1>
-            <button id="btnLogOut">Cerrar sesión</button>
+            <!--  *******************AGREGAR BOTON REGRESAR (este boton no es el adecuado)**************** -->
+            <button id="btnBacktoStart">Regresar</button>
         </section>
     </div>
     <div id="div-user" >
@@ -64,11 +45,36 @@
             <button id="btnLogOut">Cerrar sesión</button>
         </section>
 
-        <section id='wall'>
+        <section id="wall">
             <h1>Bienvenido a Mundo Dulce</h1>
-        </section>
+            <textarea id="postText" placeholder="¿Qué estás pensando?"></textarea>
+            <button  id="submitBtn">Publicar</button>
+            <br>
+            <p>Muro de Mundo Dulce :P</p>
+            <input id="wallPost" type="text"></input>
+        </section> <br>
     </div>
+    <button id="FB">FACEBOOK</button>
+    <button id="logoutFB">LogOut FACEBOOK</button>
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-database.js"></script>
+    <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyAFM1LQ38DF-ydFinuSApgtUrhFRmh37Qc",
+                authDomain: "red-social-595e4.firebaseapp.com",
+                databaseURL: "https://red-social-595e4.firebaseio.com",
+                projectId: "red-social-595e4",
+                storageBucket: "red-social-595e4.appspot.com",
+                messagingSenderId: "918699970408"
+            };
+            firebase.initializeApp(config);
+        </script>
+    <script src="database.js"></script>
     <script src="main.js"></script>
+
 </body>
 
 </html>

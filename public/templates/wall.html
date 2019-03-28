@@ -9,17 +9,17 @@
     </div>
 
 <form>
-    <input id="postText" type="text" placeholder="¡Hola!, compártenos algo">
-    <button id="publishBtn">Publicar</button>
-</form>    
+    <input id="postText" type="text" placeholder="¡Hola!, compártenos algo"/>
+    <button type="button" id="publishBtn">Publicar</button>
+</form>
 
-<%for(let post in posts) {%>
+ <%for(let post in posts) {%>
     <div>
         <p> <%posts[post].text%> </p>
-        
-        
+
         <button>Like</button>
         <button>Editar</button>
         <button>Eliminar</button>
     </div>
 <%}%>
+ 
