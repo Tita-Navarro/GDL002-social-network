@@ -42,7 +42,7 @@ const wallController = (rawTpl, outlet) => {
       }
 
     //para que aparezca el mas reciente primero
-    firebase.database().ref('/user-posts/' + userId + '/').on('value', function(snapshot){
+    firebase.database().ref('/posts/').on('value', function(snapshot){
         const posts = Object.keys(snapshot.val())
             .map(key => snapshot.val()[key])
             .reverse();
