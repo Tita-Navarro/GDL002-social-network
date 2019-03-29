@@ -1,4 +1,3 @@
-
 // configuration
 Router.config({
   mode: 'history',
@@ -10,13 +9,21 @@ Router.navigate(); //Extraido literal
 
 // adding routes - // aqui debo agregar todas las partes que mostrará la pagina (login, wall, etc)
 Router
-.add(/wall/, {
-  templateUrl: 'templates/wall.html',
-  controller: wallController
+/*.add(/welcome/, {
+  templateUrl: 'templates/welcome.html',
+  controller: welcomeController
+})*/
+.add(/register/, {
+  templateUrl: 'templates/register.html',
+  controller: registerController
 })
 .add(/login/, {
   templateUrl: 'templates/login.html',
   controller: loginController
+})
+.add(/wall/, {
+  templateUrl: 'templates/wall.html',
+  controller: wallController
 })
 .add(function() {
     console.log('default');

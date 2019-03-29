@@ -1,8 +1,19 @@
-const loginController = (rawTpl, outlet) => {
-    const tpl = templateEngine(rawTpl, {posts: []});
-    outlet.innerHTML = tpl;
+//function to register page
+/*const welcomeController = (rawTpl, outlet) => {
+      const tpl = templateEngine(rawTpl, {posts: []});
+      outlet.innerHTML = tpl;
+const register = ()=>{
+  document.getElementById("div-register").style.display='flex';
+  document.getElementById("welcome").style.display='none';
+  document.getElementById("div-signin").style.display='none';
+}
+document.getElementById("register").addEventListener('click', register);
+}*/
+      const registerController = () => {
+      const tpl = templateEngine(rawTpl, {posts: []});
+      outlet.innerHTML = tpl;
 
-//Funcion para registrar a los usuarios nuevos
+    //Funcion para registrar a los usuarios nuevos
 const registerFunction = () => {
     var email = document.getElementById('emailRegister').value;
     var password = document.getElementById('passwordRegister').value;
@@ -27,7 +38,10 @@ const registerFunction = () => {
       });
   };
   document.getElementById('btnRegister').addEventListener('click', () => { registerFunction() });
-
+}
+  const loginController = (rawTpl, outlet) => {
+    const tpl = templateEngine(rawTpl, {posts: []});
+    outlet.innerHTML = tpl;
   //Funcion para iniciar Sesion
   const loginFunction = () => {
     var email = document.getElementById('emailLogin').value;
