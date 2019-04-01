@@ -1,0 +1,19 @@
+#div-signin{
+    display: flex;
+    background-color: blueviolet;
+}
+
+#div-register{
+    display: flex;
+    background-color: coral;
+}
+
+#div-user{
+    display: flex;
+    background-color: aquamarine;
+}
+
+#plsVerify{
+    display: flex;
+    background-color: rgb(255, 127, 165);
+}
