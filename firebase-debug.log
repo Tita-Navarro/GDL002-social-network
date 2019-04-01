@@ -1,33 +1,71 @@
-[debug] [2019-03-22T23:01:05.400Z] ----------------------------------------------------------------------
-[debug] [2019-03-22T23:01:05.404Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Fany\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
-[debug] [2019-03-22T23:01:05.405Z] CLI Version:   6.5.0
-[debug] [2019-03-22T23:01:05.405Z] Platform:      win32
-[debug] [2019-03-22T23:01:05.405Z] Node Version:  v10.15.0
-[debug] [2019-03-22T23:01:05.407Z] Time:          Fri Mar 22 2019 17:01:05 GMT-0600 (GMT-06:00)
-[debug] [2019-03-22T23:01:05.407Z] ----------------------------------------------------------------------
+[debug] [2019-03-29T03:10:36.408Z] ----------------------------------------------------------------------
+[debug] [2019-03-29T03:10:36.413Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yolan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-03-29T03:10:36.413Z] CLI Version:   6.5.0
+[debug] [2019-03-29T03:10:36.413Z] Platform:      win32
+[debug] [2019-03-29T03:10:36.413Z] Node Version:  v10.15.3
+[debug] [2019-03-29T03:10:36.416Z] Time:          Thu Mar 28 2019 21:10:36 GMT-0600 (GMT-06:00)
+[debug] [2019-03-29T03:10:36.416Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-03-22T23:01:05.421Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-03-22T23:01:05.422Z] > authorizing via signed-in user
-[debug] [2019-03-22T23:01:05.422Z] [iam] checking project red-social-595e4 for permissions ["firebase.projects.get"]
-[debug] [2019-03-22T23:01:05.427Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/red-social-595e4:testIamPermissions  
+[debug] [2019-03-29T03:10:36.435Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-29T03:10:36.437Z] > authorizing via signed-in user
+[debug] [2019-03-29T03:10:36.437Z] [iam] checking project red-social-595e4 for permissions ["firebase.projects.get"]
+[debug] [2019-03-29T03:10:36.441Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/red-social-595e4:testIamPermissions  
 
-[debug] [2019-03-22T23:01:05.913Z] <<< HTTP RESPONSE 200
-[debug] [2019-03-22T23:01:05.916Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/red-social-595e4  
+[debug] [2019-03-29T03:10:36.895Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-29T03:10:36.898Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/red-social-595e4  
  
-[debug] [2019-03-22T23:01:06.264Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-29T03:10:37.252Z] <<< HTTP RESPONSE 200
 [info] 
-[info] === Serving from 'C:\Users\Fany'...
+[info] === Serving from 'C:\Users\yolan\Documents\GDL002-social-network'...
 [info] 
 [info] i  functions: Preparing to emulate functions.
-[debug] [2019-03-22T23:01:07.199Z] Fetching environment
-[debug] [2019-03-22T23:01:07.204Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/918699970408:getServerAppConfig  
+[debug] [2019-03-29T03:10:39.073Z] Fetching environment
+[debug] [2019-03-29T03:10:39.079Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/918699970408:getServerAppConfig  
  
-[debug] [2019-03-22T23:01:07.205Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/918699970408/clients/_:getWebAppConfig  
+[debug] [2019-03-29T03:10:39.080Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/918699970408/clients/_:getWebAppConfig  
  
-[debug] [2019-03-22T23:01:07.460Z] <<< HTTP RESPONSE 200
-[debug] [2019-03-22T23:01:07.460Z] Starting @google-cloud/functions-emulator
-[debug] [2019-03-22T23:01:07.718Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-29T03:10:39.377Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-29T03:10:39.378Z] Starting @google-cloud/functions-emulator
+[debug] [2019-03-29T03:10:39.504Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
-[debug] [2019-03-22T23:01:09.509Z] Parsing function triggers
+[debug] [2019-03-29T03:10:43.092Z] Parsing function triggers
 [info] i  functions: No HTTPS functions found. Use firebase functions:shell if you would like to emulate other types of functions.
+[debug] [2019-03-31T20:02:46.481Z] ----------------------------------------------------------------------
+[debug] [2019-03-31T20:02:46.486Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yolan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-03-31T20:02:46.487Z] CLI Version:   6.5.0
+[debug] [2019-03-31T20:02:46.487Z] Platform:      win32
+[debug] [2019-03-31T20:02:46.487Z] Node Version:  v10.15.3
+[debug] [2019-03-31T20:02:46.489Z] Time:          Sun Mar 31 2019 14:02:46 GMT-0600 (GMT-06:00)
+[debug] [2019-03-31T20:02:46.489Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-31T20:02:46.608Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-31T20:02:46.610Z] > authorizing via signed-in user
+[debug] [2019-03-31T20:02:46.610Z] [iam] checking project red-social-595e4 for permissions ["firebase.projects.get"]
+[debug] [2019-03-31T20:02:46.614Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-03-31T20:02:46.615Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-03-31T20:02:46.851Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-31T20:02:47.012Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/red-social-595e4:testIamPermissions  
+
+[debug] [2019-03-31T20:02:47.547Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-31T20:02:47.548Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/red-social-595e4  
+ 
+[debug] [2019-03-31T20:02:47.863Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\yolan\Documents\GDL002-social-network'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-03-31T20:02:59.797Z] Fetching environment
+[debug] [2019-03-31T20:02:59.804Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/918699970408:getServerAppConfig  
+ 
+[debug] [2019-03-31T20:02:59.805Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/918699970408/clients/_:getWebAppConfig  
+ 
+[debug] [2019-03-31T20:03:00.075Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-31T20:03:00.075Z] Starting @google-cloud/functions-emulator
+[debug] [2019-03-31T20:03:00.339Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2019-03-31T20:03:11.056Z] Parsing function triggers
+[info] i  functions: No HTTPS functions found. Use firebase functions:shell if you would like to emulate other types of functions.
+[info] Shutting down...
