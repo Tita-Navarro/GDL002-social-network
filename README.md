@@ -13,8 +13,8 @@
 - [Prototipado](#prototipado-de-baja-fidelidad)
 - [Prototipado final](#Prototipado-de-alta-fidelidad)
 - [Historias de usuario](#historias-de-usuario)
-- [Testing](#pruebas-con-usuarios)
-- [Resultados finales](#resultados)
+- [Testing](#pruebas-con-usuarios-(testing))
+- [Resultados finales](#resultados-finales)
 ---
 
 ## Elementos de una red social
@@ -64,9 +64,9 @@ Con la información que recabamos con la encuesta que hicimos encontramos que el
 
 ## ¿Cómo sé que el usuario usará el producto?
 
-## Prototipado (baja fidelidad)
+## Prototipado de baja fidelidad
 
-## Prototipado final (alta fidelidas)
+## Prototipado final de alta fidelidad
 
 ## Historias de usuario
 
