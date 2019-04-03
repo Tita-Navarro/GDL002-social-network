@@ -3,9 +3,9 @@
 ## Índice
 
 - [Elementos básicos de una red social](#elementos-de-una-red-social)
-- [Usuarios](#usuario-meta)
-- [Necesidad del usuario](#descubrir-necesidad)
-- [Problema que buscamos resolver](#problema-que-resuelve)
+- [Usuarios](#usuarios)
+- [Necesidad del usuario](#necesidad-del-usuario)
+- [Problema que buscamos resolver](#problema-que-buscamos-resolver)
 - [Objetivo del usuario con mi producto](#objetivo-usuario)
 - [¿Cómo el producto resuelve el problema?](#producto-resuelve-problema)
 - [Prioridad y principales funcionalidades](#prioridad-y-funcionalidades)
@@ -17,7 +17,7 @@
 - [Resultados finales](#resultados)
 ---
 
-## Elementos básicos de una red social
+## Elementos de una red social
 
 Los elementos base de una red social son:
 
