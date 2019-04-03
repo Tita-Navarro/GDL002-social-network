@@ -15,11 +15,10 @@
 
 <%for(let index in posts) {%>
 <div>
-    <p> <%posts[index].text%> </p>
+    <p id="postArea"> <%posts[index].text%> </p>
 
-    <button data-id="<%posts[index].id%>" data-likes="<%posts[index].likes%>" class="likePost">Like
-        (<%posts[index].likes%>) </button>
-    <button data-id="<%posts[index].id%>">Editar</button>
+    <button data-id="<%posts[index].id%>" data-likes="<%posts[index].likes%>" class="likePost">Like (<%posts[index].likes%>) </button>
+    <button id="btnEdit" data-id="<%posts[index].id%>" class="modPost">Editar</button>
     <button data-id="<%posts[index].id%>" class="removePost">Eliminar</button>
 </div>
 <%}%>

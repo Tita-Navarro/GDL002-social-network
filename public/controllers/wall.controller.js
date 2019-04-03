@@ -5,11 +5,15 @@ const wallController = (rawTpl, outlet) => {
     document.getElementById('publishBtn').addEventListener('click', () => createPost());
     const removeButtons = document.getElementsByClassName('removePost');
     for (const button of removeButtons) {
-      button.addEventListener('click', (event) => removePost(event));
+      button.addEventListener('click', (event) => removePost(event)); // creo q aqui puedo insertar el alert
     }
     const likeButtons = document.getElementsByClassName('likePost');
     for (const button of likeButtons) {
       button.addEventListener('click', (event) => countLikes(event));
+    }
+    const modButtons = document.getElementsByClassName('modPost');
+      for(const button of modButtons) {
+        button.addEventListener('click', (event)=> modPost(event));
     }
   }
 
@@ -50,6 +54,21 @@ const wallController = (rawTpl, outlet) => {
     firebase.database().ref(`/posts/${postId}`).update({ likes: likes });
 
   }
+ //Modificar Post - text hi ok
+  const modPost = (event) => {
+  let button = event.target;
+  button.innerHTML = 'Guardar'
+  button.onclick = function () {
+  const postText = document.getElementById('postText').value;
+  const updateText = {text:postText}
+  const postId = event.target.dataset.id;
+  return firebase.database().ref(`/posts/${postId}`).update(updateText);
+  }
+}
+
+
+
+
 
   //para que aparezca el mas reciente primero
   firebase.database().ref('/posts/').on('value', function (snapshot) {
