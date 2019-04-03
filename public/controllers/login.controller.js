@@ -1,9 +1,9 @@
 const loginController = (rawTpl, outlet) => {
-    const tpl = templateEngine(rawTpl, {posts: []});
-    outlet.innerHTML = tpl;
+  const tpl = templateEngine(rawTpl, { posts: [] });
+  outlet.innerHTML = tpl;
 
-//Funcion para registrar a los usuarios nuevos
-const registerFunction = () => {
+  //Funcion para registrar a los usuarios nuevos
+  const registerFunction = () => {
     var email = document.getElementById('emailRegister').value;
     var password = document.getElementById('passwordRegister').value;
 
@@ -27,6 +27,7 @@ const registerFunction = () => {
       });
   };
   document.getElementById('btnRegister').addEventListener('click', () => { registerFunction() });
+  
   //Funcion para iniciar Sesion
   const loginFunction = () => {
     var email = document.getElementById('emailLogin').value;

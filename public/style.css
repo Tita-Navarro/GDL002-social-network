@@ -1,19 +1,11 @@
-#div-signin{
-    display: flex;
-    background-color: blueviolet;
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
 }
 
-#div-register{
-    display: flex;
-    background-color: coral;
-}
-
-#div-user{
-    display: flex;
-    background-color: aquamarine;
-}
-
-#plsVerify{
-    display: flex;
-    background-color: rgb(255, 127, 165);
+body{
+    background: #78c2ad;
 }
