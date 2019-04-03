@@ -1,13 +1,44 @@
-<div id="div-signin" class="signinSection">
-    <span class="back" id="back"> ← </span>
-    <!--Formulario para Login-->
-    <section id="userLogin" class="userForm">
-        <img alt="registerImage" src="../images/mundo_dulce2.png" class="imageRegister">
-        <h3 class="registerLine login">Inicia tu sesión</h3>
-        <label for="emailLogin" class="email">Ingresa tu correo electrónico</label>
-        <input id="emailLogin" class="register sizing" type="email">
-        <label for="passwordLogin" class="passwordLogin">Ingresa tu contraseña</label>
-        <input id="passwordLogin" type="password" class="register sizing">
-        <button id="btnLogin" class="btnLogin move">Iniciar sesión</button>
-    </section>
-</div>
+<header class="loginMenu" id="loginMenu">
+        <nav class="navBar">
+            <span class="aboutUs"> ? </span>
+        </nav>
+    </header>
+<main id="welcome" class="welcomePage">
+                <section class="welcome message">
+                    <h1 class="message">¡Bienvenid@ a tu red de postres!</h1>
+                    <img alt="welcome" src="../images/mundo_dulce.png" class="imageWelcome">
+                </section>
+                <section id="welcomeOptions" class="options">
+                    <button id="register" class="btnRegister">Regístrate</button><br>
+                    <p class="separation"> Ó </p><br>
+                    <button id="login" class="btnLogin">Inicia sesión</button>
+                </section>
+            </main>
+            <div id="div-register" class="registerSection">
+                    Formulario para Registro de Usuarios nuevos
+                        <span class="back" id="back"> ← </span>
+                        <section id="userRegister" class="userForm">
+                            <img alt="registerImage" src="../images/mundo_dulce2.png" class="imageRegister">
+                            <h3 class="registerLine">Crea tu cuenta y comienza a compartir</h3>
+                            <label for="name" class="name">¿Cuál es tu nombre?</label>
+                            <input id="name" class="register sizing" type="text"/>
+                            <label for="email" class="email">Ingresa tu correo electrónico</label>
+                            <input id="emailRegister" class="register sizing" type="email" placeholder="email@example.com"/>
+                            <label for="passwordRegister" class="passwordRegister">Ingresa una contraseña</label>
+                            <input id="passwordRegister" class="register sizing" type="password"/>
+                            <button id="btnRegister"class="btnRegister move">Regístrate</button>
+                        </section>
+                    </div> 
+                    <div id="div-signin" class="signinSection">
+                            <span class="back" id="back"> ← </span>
+                            <!--Formulario para Login-->
+                            <section id="userLogin" class="userForm">
+                                <img alt="registerImage" src="../images/mundo_dulce2.png" class="imageRegister">
+                                <h3 class="registerLine login">Inicia tu sesión</h3>
+                                <label for="emailLogin" class="email">Ingresa tu correo electrónico</label>
+                                <input id="emailLogin" class="register sizing" type="email">
+                                <label for="passwordLogin" class="passwordLogin">Ingresa tu contraseña</label>
+                                <input id="passwordLogin" type="password" class="register sizing">
+                                <button id="btnLogin" class="btnLogin move">Iniciar sesión</button>
+                            </section>
+                        </div>

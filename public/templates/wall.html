@@ -1,25 +1,23 @@
-
 <section id='wall'>
-    <h1>Bienvenida a Mundo Dulce</h1>
-</section>
-<div id="div-user" >
-        <section id="userLogout">
-            <button id="btnLogOut">Cerrar sesión</button>
-        </section>
-    </div>
-
-<form>
-    <input id="postText" type="text" placeholder="¡Hola!, compártenos algo"/>
-    <button type="button" id="publishBtn">Publicar</button>
-</form>
-
- <%for(let post in posts) {%>
-    <div>
-        <p> <%posts[post].text%> </p>
-
-        <button>Like</button>
-        <button>Editar</button>
-        <button>Eliminar</button>
-    </div>
-<%}%>
- 
+        <h1>Bienvenida a Mundo Dulce</h1>
+    </section>
+    <div id="div-user" >
+            <section id="userLogout">
+                <button id="btnLogOut">Cerrar sesión</button>
+            </section>
+        </div>
+    
+    <form>
+        <input id="postText" type="text" placeholder="¡Hola!, compártenos algo"/>
+        <button type="button" id="publishBtn">Publicar</button>
+    </form>
+    
+     <%for(let post in posts) {%>
+        <div>
+            <p> <%posts[post].text%> </p>
+    
+            <button>Like</button>
+            <button>Editar</button>
+            <button>Eliminar</button>
+        </div>
+    <%}%>
