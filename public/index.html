@@ -1,60 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <title>Mundo Dulce</title>
     <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-database.js"></script>
     <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyAFM1LQ38DF-ydFinuSApgtUrhFRmh37Qc",
-            authDomain: "red-social-595e4.firebaseapp.com",
-            databaseURL: "https://red-social-595e4.firebaseio.com",
-            projectId: "red-social-595e4",
-            storageBucket: "red-social-595e4.appspot.com",
-            messagingSenderId: "918699970408"
-        };
-        firebase.initializeApp(config);
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAFM1LQ38DF-ydFinuSApgtUrhFRmh37Qc",
+        authDomain: "red-social-595e4.firebaseapp.com",
+        databaseURL: "https://red-social-595e4.firebaseio.com",
+        projectId: "red-social-595e4",
+        storageBucket: "red-social-595e4.appspot.com",
+        messagingSenderId: "918699970408"
+      };
+      firebase.initializeApp(config);
     </script>
-</head>
+  </head>
 
-<body>
-    <div id="router-outlet">
-    <!--    <header class="loginMenu" id="loginMenu">
-            <nav class="navBar">
-                <span class="aboutUs"> ? </span>
-            </nav>
-        </header>
-            <main id="welcome" class="welcomePage">
-                <section class="welcome message">
-                    <h1 class="message">¡Bienvenid@ a tu red de postres!</h1>
-                    <img alt="welcome" src="../images/mundo_dulce.png" class="imageWelcome">
-                </section>
-                <section id="welcomeOptions" class="options">
-                    <button id="register" class="btnRegister">Regístrate</button><br>
-                    <p class="separation"> Ó </p><br>
-                    <button id="login" class="btnLogin">Inicia sesión</button>
-                </section>
-            </main> -->
-    </div>
-    <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
+  <body>
+    <div id="router-outlet"></div>
     <script src="libraries/router.js"></script>
     <script src="libraries/template-engine.js"></script>
     <script src="controllers/login.controller.js"></script>
     <script src="controllers/wall.controller.js"></script>
     <script src="main.js"></script>
-   <!--<script>
-        $('.message a').click(function(){
-        $('form').animate({height:"toggle", opacity:"toggle"}, "slow");    
-        });
-    </script>--> 
-</body>
-
+  </body>
 </html>

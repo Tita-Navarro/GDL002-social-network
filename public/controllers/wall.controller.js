@@ -41,11 +41,11 @@ const wallController = (rawTpl, outlet) => {
         return firebase.database().ref().update(updates);
       }
 
-    //para que aparezca el mas reciente primero
-    firebase.database().ref('/posts/').on('value', function(snapshot){
-        const posts = Object.keys(snapshot.val())
-            .map(key => snapshot.val()[key])
-            .reverse();
+  // eliminación del post
+  const removePost = (event) => {
+    const postId = event.target.dataset.id;
+    firebase.database().ref(`/posts/${postId}`).remove();
+  }
 
         outlet.innerHTML = templateEngine(rawTpl, { posts });
         again();

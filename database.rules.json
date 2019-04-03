@@ -3,4 +3,8 @@
     ".read": "auth != null",
     ".write": "auth != null"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ef36ba46e27c6ce60b19ad9d6271d84cdc96334d

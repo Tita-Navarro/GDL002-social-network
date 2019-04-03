@@ -1,7 +1,5 @@
 /*estilos generales*/
 
-/*estilos generales*/
-
 *{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -44,7 +42,7 @@ body{
     width: 15rem;
     margin-bottom: 1rem;
 }
-.btnRegister, .btnLogin{
+.bttnRegister, .bttnLogin{
     margin-top: 0;
     margin-left: 5rem;
     height: 2rem;
