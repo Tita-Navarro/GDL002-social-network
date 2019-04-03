@@ -1,0 +1,116 @@
+/*estilos generales*/
+
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+body{
+    background: #78c2ad;
+}
+
+/*estilos para pantalla de inicio*/
+
+.aboutUs, .back{
+    border-radius: 50%;
+    font-size: 2rem;
+    background-color: #df744a;
+    text-align: center;
+    float: right;
+    font-weight: 600;
+    padding: 0.1rem;
+    margin: 0.6rem;
+    height: 3rem;
+    width: 3rem;
+}
+.loginMenu{
+    height: 5rem;
+}
+
+/*estilos para mensaje de bienvenida*/
+
+h1.message{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    color: whitesmoke;
+}
+.imageWelcome{
+    align-content: center;
+    width: 15rem;
+    margin-bottom: 1rem;
+}
+.bttnRegister, .bttnLogin{
+    margin-top: 0;
+    margin-left: 5rem;
+    height: 2rem;
+    width: 10rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    background-color: #df744a;
+    color: whitesmoke;
+}
+.separation{
+    text-align: center;
+}
+/*divs para registro e inicio de sesión*/
+.userForm {
+    margin-top: 3rem;
+}
+.back{
+    background: #78c2ad;
+    font-size: 1rem;
+    height: 1.5rem;
+    width: 2rem;
+    border-radius: 25%;
+    text-align: center;
+    float: left;
+}
+#div-signin{
+    display: flex;
+    background-color: white;
+}
+.imageRegister{
+    width: 6rem;
+    margin-left: 4rem;
+
+}
+.sizing{
+    width: 14rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.registerLine{
+    text-align: center;
+    margin-right: 1rem;
+    margin-left: -2rem;
+    margin-bottom: 1rem;
+}
+
+#div-register{
+    display: flex;
+    background-color: white;
+}
+.move{
+    margin-left: 2rem;
+}
+
+#div-user{
+    display: table;
+    background-color: white;
+}
+.login{
+    margin-left: -3rem;
+}
+
+#plsVerify{
+    display: table;
+    background-color: #78c2ad;
+}
+.register{
+    background-color: white;
+    border-style: none;
+    border-bottom-style: solid;
+}
