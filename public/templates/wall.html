@@ -1,23 +1,23 @@
-<section id="wall">
-  <h1>Bienvenida a Mundo Dulce</h1>
+<section id='wall'>
+    <h1>Bienvenida a Mundo Dulce</h1>
 </section>
 <div id="div-user">
-  <section id="userLogout">
-    <button id="btnLogOut">Cerrar sesión</button>
-  </section>
+    <section id="userLogout">
+        <button id="btnLogOut">Cerrar sesión</button>
+    </section>
 </div>
 
 <form>
-  <input id="postText" type="text" placeholder="¡Hola!, compártenos algo" />
-  <button type="button" id="publishBtn">Publicar</button>
+    <input id="postText" type="text" placeholder="¡Hola!, compártenos algo" required />
+    <button type="button" id="publishBtn">Publicar</button>
 </form>
 
-<%for(let post in posts) {%>
+<%for(let index in posts) {%>
 <div>
-  <p><%posts[post].text%></p>
+    <p id="postArea"> <%posts[index].text%> </p>
 
-  <button>Like</button>
-  <button>Editar</button>
-  <button>Eliminar</button>
+    <button data-id="<%posts[index].id%>" data-likes="<%posts[index].likes%>" class="likePost">Like (<%posts[index].likes%>) </button>
+    <button id="btnEdit" data-id="<%posts[index].id%>" class="modPost">Editar</button>
+    <button data-id="<%posts[index].id%>" class="removePost">Eliminar</button>
 </div>
 <%}%>

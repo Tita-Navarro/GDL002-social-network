@@ -126,3 +126,47 @@ Try running "npm install" in your functions directory before deploying.
 
 Try running "npm install" in your functions directory before deploying.
 [debug] [2019-04-03T16:22:57.885Z] 
+[debug] [2019-04-03T16:43:09.687Z] ----------------------------------------------------------------------
+[debug] [2019-04-03T16:43:09.697Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tita_\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-04-03T16:43:09.699Z] CLI Version:   6.5.0
+[debug] [2019-04-03T16:43:09.699Z] Platform:      win32
+[debug] [2019-04-03T16:43:09.699Z] Node Version:  v10.15.0
+[debug] [2019-04-03T16:43:09.704Z] Time:          Wed Apr 03 2019 10:43:09 GMT-0600 (GMT-06:00)
+[debug] [2019-04-03T16:43:09.704Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-04-03T16:43:09.799Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-04-03T16:43:09.801Z] > authorizing via signed-in user
+[debug] [2019-04-03T16:43:09.802Z] [iam] checking project red-social-595e4 for permissions ["firebase.projects.get"]
+[debug] [2019-04-03T16:43:09.810Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-04-03T16:43:09.812Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-04-03T16:43:10.402Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-03T16:43:10.434Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/red-social-595e4:testIamPermissions  
+
+[debug] [2019-04-03T16:43:10.863Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-03T16:43:10.868Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/red-social-595e4  
+ 
+[debug] [2019-04-03T16:43:11.184Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\tita_\Documents\proyecto-laboratoria\GDL002-social-network'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2019-04-03T16:43:24.830Z] Fetching environment
+[debug] [2019-04-03T16:43:24.854Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/918699970408:getServerAppConfig  
+ 
+[debug] [2019-04-03T16:43:24.857Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/918699970408/clients/_:getWebAppConfig  
+ 
+[debug] [2019-04-03T16:43:25.290Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-03T16:43:25.291Z] Starting @google-cloud/functions-emulator
+[debug] [2019-04-03T16:43:25.409Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2019-04-03T16:43:37.804Z] Parsing function triggers
+[warn] !  functions: Failed to load functions source code. Ensure that you have the latest SDK by running npm i --save firebase-functions inside the functions directory.
+[debug] [2019-04-03T16:43:38.627Z] Error during trigger parsing:  Error parsing triggers: Cannot find module 'firebase-functions'
+
+Try running "npm install" in your functions directory before deploying.
+[warn] !  functions: Error from emulator. Error parsing triggers: Cannot find module 'firebase-functions'
+
+Try running "npm install" in your functions directory before deploying.
+[debug] [2019-04-03T16:43:38.680Z] 

@@ -19,6 +19,6 @@
   "homepage": "https://github.com/MarinaEstefania/GDL002-social-network#readme",
   "dependencies": {
     "firebase": "^5.9.1",
-    "firebase-tools": "^6.5.0"
+    "firebase-tools": "^6.5.1"
   }
 }
