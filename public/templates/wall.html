@@ -1,23 +1,56 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="./wall.html">Mundo Dulce</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+                <!-- active -->
+                <a class="nav-link" href="#">Notificaciones <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Amigos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Buscar</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <!--   <input class="form-control mr-sm-2" type="text" placeholder="Search"> -->
+            <button id="btnLogOut" class="btn btn-secondary my-2 my-sm-0" type="submit">Cerrar Sesión</button>
+        </form>
+    </div>
+</nav>
+
 <section id='wall'>
-    <h1>Bienvenida a Mundo Dulce</h1>
-</section>
-<div id="div-user">
-    <section id="userLogout">
-        <button id="btnLogOut">Cerrar sesión</button>
+    <form id="formPost">
+        <input id="postText" type="text" class="form-control form-control-lg" type="text" placeholder="¡Hola!, ¿Qué postreas hoy?" required />
+        <button class="btn btn-primary" type="button" id="publishBtn">Publicar</button>
+    </form>
+
+    <!-- <div class="card border-primary mb-3" style="max-width: 20rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+            <h4 class="card-title">Primary card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+        </div>
+    </div> -->
+
+<section id=postArea>
+    <%for(let index in posts) {%>
+    <div class="card border-primary">
+        <p class="textPost"> <%posts[index].text%> </p>
+        <div id="btnAction">
+        <button data-id="<%posts[index].id%>" data-likes="<%posts[index].likes%>" class="likePost btn btn-primary">Like
+            (<%posts[index].likes%>) </button>
+        <button id="btnEdit" data-id="<%posts[index].id%>" class="modPost btn btn-primary">Editar</button>
+        <button data-id="<%posts[index].id%>" class="removePost btn btn-primary">Eliminar</button>
+        
+    </div>
+    </div>
+    <%}%>
     </section>
-</div>
-
-<form>
-    <input id="postText" type="text" placeholder="¡Hola!, compártenos algo" required />
-    <button type="button" id="publishBtn">Publicar</button>
-</form>
-
-<%for(let index in posts) {%>
-<div>
-    <p id="postArea"> <%posts[index].text%> </p>
-
-    <button data-id="<%posts[index].id%>" data-likes="<%posts[index].likes%>" class="likePost">Like (<%posts[index].likes%>) </button>
-    <button id="btnEdit" data-id="<%posts[index].id%>" class="modPost">Editar</button>
-    <button data-id="<%posts[index].id%>" class="removePost">Eliminar</button>
-</div>
-<%}%>
+</section>
