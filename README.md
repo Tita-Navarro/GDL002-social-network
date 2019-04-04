@@ -13,7 +13,7 @@
 - [Prototipado](#prototipado-de-baja-fidelidad)
 - [Prototipado final](#Prototipado-de-alta-fidelidad)
 - [Historias de usuario](#historias-de-usuario)
-- [Testing](#pruebas-con-usuarios-(testing))
+- [Testing](#pruebas-con-usuarios)
 - [Resultados finales](#resultados-finales)
 
 ---
@@ -121,6 +121,6 @@ Para crear nuestras historias de usuario pusimos interés en lo que nuestros usu
 * El usuario necesita un muro para interactuar en la red social.
 * El usuario necesita al momento de navegar por la aplicación no haya errores.
 
-## Pruebas con usuarios (testing)
+## Pruebas con usuarios
 
 ## Resultados finales
