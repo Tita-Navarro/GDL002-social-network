@@ -13,24 +13,24 @@
 - [Prototipado](#prototipado-de-baja-fidelidad)
 - [Prototipado final](#Prototipado-de-alta-fidelidad)
 - [Historias de usuario](#historias-de-usuario)
-- [Testing](#pruebas-con-usuarios-(testing))
+- [Testing](<#pruebas-con-usuarios-(testing)>)
 - [Resultados finales](#resultados-finales)
+
 ---
 
 ## Elementos de una red social
 
 Los elementos base de una red social son:
 
-* El lenguaje, aquí es donde parten y nacen las emociones.
-* Los nodos, son los lugares en la red (personas, grupos, instituciones, etc.), contribuyen a la estabilidad de la red, su permanencia y su seguridad.
-* Los vínculos son los tipos de relación entre los nodos en cada red social, se caracterizan por ser: persistentes, recíprocos y prevalentes.
-* Sistema de vínculos, conjunto de relaciones o vínculos entre los nodos.
-* El intercambio puede ser afectivo/emocional, social, material, financiero, se manifiestan en recursos que fluyen en toda la red y están disponibles.
-
+- El lenguaje, aquí es donde parten y nacen las emociones.
+- Los nodos, son los lugares en la red (personas, grupos, instituciones, etc.), contribuyen a la estabilidad de la red, su permanencia y su seguridad.
+- Los vínculos son los tipos de relación entre los nodos en cada red social, se caracterizan por ser: persistentes, recíprocos y prevalentes.
+- Sistema de vínculos, conjunto de relaciones o vínculos entre los nodos.
+- El intercambio puede ser afectivo/emocional, social, material, financiero, se manifiestan en recursos que fluyen en toda la red y están disponibles.
 
 ## Usuarios
 
-Nuestros usuarios son personas que les gusta hacer repostería, pero no son personas que se dediquen profesionalmente a la repostería como un oficio sino mas bien como un hobbie. 
+Nuestros usuarios son personas que les gusta hacer repostería, pero no son personas que se dediquen profesionalmente a la repostería como un oficio sino mas bien como un hobbie.
 ![Resultado encuesta gustos repostería](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/Encuesta1.jpg)
 
 También buscamos que nombre podría darle al usuario el sentido y la afinidad de que estaba en una red social de repostería. Para el cuál el nombre "Mundo Dulce" fue el nombre que los usuarios encontraron identidad para esta red social.
@@ -76,17 +76,25 @@ Las siguientes funcionalidades que se esperan en una segunda iteración es que e
 
 ## ¿Cómo sé que el usuario usará el producto?
 
-
 ## Prototipado de baja fidelidad
 
 El prototipado de baja fidelidad presenta las pantallas para registro, login y el muro de interacción donde se publicarán los mensajes que escribe y edita el usuario así como eliminarlos.
+
 ![Prototipado portada](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/prototipado_baja_fidelidad_1.jpeg)
+
 ![Prototipado registro y login](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/prototipado_baja_fidelidad_2.jpeg)
+
 ![Prototipado login y registro](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/prototipado_baja_fidelidad_3.jpeg)
+
 ![Prototipado categorías](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/prototipado_baja_fidelidad_4.jpeg)
+
 ![Prototipado muro](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/prototipo_baja_fidelidad_5.jpeg)
 
-## Prototipado final de alta fidelidad
+## Prototipado de alta fidelidad
+
+Para llegar al prototipado en alta fidelidad buscamos y testeamos con usuarios los colores y el logo para darnos cuenta si la red social tenía el sentido de ser una red social para personas interesadas en repostería y postres. La primera iteración para nuestro prototipo en alta fidelidad es el siguiente:
+
+![Prototipado alta fidelidad portada]()
 
 ## Historias de usuario
 
