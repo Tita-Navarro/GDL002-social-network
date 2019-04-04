@@ -76,6 +76,11 @@ Las siguientes funcionalidades que se esperan en una segunda iteración es que e
 
 ## ¿Cómo sé que el usuario usará el producto?
 
+Nos percatamos que los usuarios son personas que toman el conocimiento de recetas para hacer postres como un hobbie y no tanto como una profesión, además de que el usuario por lo regular usa recetas de postres para innovar y dar a sus familiares algo diferente en reuniones especiales.
+
+Entonces, ¿cómo sabemos que el usuario usa nuestra red social?
+Cuando suben sus recetas, cuando comenten recetas de otros usuarios, cuando le den un me gusta a una receta de otro usuario o incluso cuando empiecen a compartir las recetas que sean de su interés.
+
 ## Prototipado de baja fidelidad
 
 El prototipado de baja fidelidad presenta las pantallas para registro, login y el muro de interacción donde se publicarán los mensajes que escribe y edita el usuario así como eliminarlos.
@@ -94,9 +99,27 @@ El prototipado de baja fidelidad presenta las pantallas para registro, login y e
 
 Para llegar al prototipado en alta fidelidad buscamos y testeamos con usuarios los colores y el logo para darnos cuenta si la red social tenía el sentido de ser una red social para personas interesadas en repostería y postres. La primera iteración para nuestro prototipo en alta fidelidad es el siguiente:
 
-![Prototipado alta fidelidad portada]()
+![Prototipado alta fidelidad portada](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/prototipado_alta_fidelidad1.jpg)
+
+![Prototipado alta fidelidad login registro](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/prototipado_alta_fidelidad2.jpg)
+
+![Prototipado alta fidelidad registro login](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/prototipado_alta_fidelidad3.jpg)
+
+![Prototipado alta fidelidad categorías](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/prototipado_alta_fidelidad4.jpg)
+
+![Prototipado alta fidelidad muro](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/prototipado_alta_fidelidad5.jpg)
 
 ## Historias de usuario
+
+Para crear nuestras historias de usuario pusimos interés en lo que nuestros usuarios que contestaron la encuesta pidieron, nuestras historias de usuario son las siguientes:
+
+* El usuario necesita una pantalla de Login para iniciar sesión.
+* El usuario necesita una pantalla de inicio para tener la opción de registrarse en la aplicación o iniciar sesión según sea el caso.
+* El usuario necesita una pantalla de registro para introducir sus datos y crear una cuenta en la aplicación.
+* El usuario necesita una interfaz agradable,intuitiva, con colores relacionados a la temática de la aplicación.
+* El usuario necesita que la aplicación sea responsive para que pueda verla en pantallas de diferentes tamaños.
+* El usuario necesita un muro para interactuar en la red social.
+* El usuario necesita al momento de navegar por la aplicación no haya errores.
 
 ## Pruebas con usuarios (testing)
 
