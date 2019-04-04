@@ -1,5 +1,7 @@
 # Mundo Dulce
 
+Una red social diferente, auténtica y con la finalidad de crear magia y un ambiente dulce al compartir tus postres.
+
 ## Índice
 
 - [Elementos básicos de una red social](#elementos-de-una-red-social)
