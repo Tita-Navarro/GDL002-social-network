@@ -80,6 +80,11 @@ Las siguientes funcionalidades que se esperan en una segunda iteración es que e
 ## Prototipado de baja fidelidad
 
 El prototipado de baja fidelidad presenta las pantallas para registro, login y el muro de interacción donde se publicarán los mensajes que escribe y edita el usuario así como eliminarlos.
+![Prototipado portada](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/prototipado_baja_fidelidad_1.jpeg)
+![Prototipado registro y login](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/prototipado_baja_fidelidad_2.jpeg)
+![Prototipado login y registro](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/prototipado_baja_fidelidad_3.jpeg)
+![Prototipado categorías](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/prototipado_baja_fidelidad_4.jpeg)
+![Prototipado muro](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/prototipado_baja_fidelidad_5.jpeg)
 
 ## Prototipado final de alta fidelidad
 
