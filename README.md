@@ -13,7 +13,7 @@
 - [Prototipado](#prototipado-de-baja-fidelidad)
 - [Prototipado final](#Prototipado-de-alta-fidelidad)
 - [Historias de usuario](#historias-de-usuario)
-- [Testing](<#pruebas-con-usuarios-(testing))
+- [Testing](#pruebas-con-usuarios-(testing))
 - [Resultados finales](#resultados-finales)
 
 ---
