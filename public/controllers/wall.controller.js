@@ -55,7 +55,8 @@ const wallController = (rawTpl, outlet) => {
     firebase.database().ref(`/posts/${postId}`).update({ likes: likes });
 
   }
- //Modificar Post - text hi ok
+
+ //Modificar Post 
   const modPost = (event) => {
   let button = event.target;
   button.innerHTML = 'Guardar'
@@ -66,10 +67,6 @@ const wallController = (rawTpl, outlet) => {
   return firebase.database().ref(`/posts/${postId}`).update(updateText);
   }
 }
-
-
-
-
 
   //para que aparezca el mas reciente primero
   firebase.database().ref('/posts/').on('value', function (snapshot) {
