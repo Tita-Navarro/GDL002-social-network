@@ -10804,6 +10804,9 @@
 
 
  /* ***********    WALL.HTML STYLE      ******* */
+ .pointer{
+   cursor:pointer;
+ }
  input#postText.form-control.form-control-lg{
      width: -webkit-fill-available;
  }
@@ -10834,23 +10837,50 @@
  }
 
 
-
-
-
-
   /* ***********    LOGIN.HTML STYLE      ******* */
 
   #login{
       display: flex;
-      background-color: #78C2AD;
       align-items: center;
       flex-direction: column;
       justify-content: center;
-      height: 100%;
+      height: 100vh;
       text-align: center;
+      background-color: #20c997;
+      padding: 8vw;
+     
       /* box-sizing: border-box; */
   }
 
+
+  .welcome{
+    color: black;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+  #createAccount{
+    color:black;
+  }
+  .input-form{
+    margin-bottom: 4vw;
+  }
   #userLogin{
     margin: 5vw;
+  }
+
+  .logoMain{
+    width: 70vw;
+    height: 60vw;
+  }
+ 
+  .input#emailLogin.form-control{
+    margin-bottom: 8vw;
+  }
+ /*  #userLogin{
+    background-color: #20c997;
+  } */
+
+/*dar estilos a los inputs del registro*/
+  .inputRegister{
+    margin: 2vw;
   }
