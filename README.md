@@ -72,12 +72,14 @@ La prioridad principal que buscamos con esto es conectar usuarios con un objetiv
 
 Las principales funcionalidades en esta primera iteración es que el usuario pueda compartir sus mensajes, editarlos y eliminarlos.
 
-Las siguientes funcionalidades que se esperan en una segunda iteración es que el usuario pueda compartir imágenes y de ser posible vídeos y que los usuarios puedan agregar amigos y tener su propio perfil.
+Las siguientes funcionalidades que se esperan en una segunda iteración es que el usuario pueda compartir imágenes y de ser posible vídeos, que el usuario pueda compartir otras publicaciones y que los usuarios puedan agregar amigos y tener su propio perfil.
 
 ## ¿Cómo sé que el usuario usará el producto?
 
 
 ## Prototipado de baja fidelidad
+
+El prototipado de baja fidelidad presenta las pantallas para registro, login y el muro de interacción donde se publicarán los mensajes que escribe y edita el usuario así como eliminarlos.
 
 ## Prototipado final de alta fidelidad
 
