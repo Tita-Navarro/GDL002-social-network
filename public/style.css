@@ -10802,83 +10802,144 @@
    color: inherit;
  }
 
-
  /* ***********    WALL.HTML STYLE      ******* */
- .pointer{
-   cursor:pointer;
+.pointer{
+  cursor:pointer;
+}
+input#postText.form-control.form-control-lg{
+    width: -webkit-fill-available;
+}
+
+#wall{
+    margin: 3vw;
+}
+
+button#publishBtn.btn.btn-primary{
+   float: right;
+   margin-top: 2vw;
+}
+
+#postArea{
+    margin-top: 15vw;
+}
+
+p.textPost{
+    font-size: 1.3rem;
+}
+
+div.card.border-primary{
+   margin-bottom: 4vw;
+   padding: 2.5vw
+}
+body{
+    background: #ebf0e7;
+}
+
+
+ /* ***********    LOGIN.HTML STYLE      ******* */
+
+ #login{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     background-color: #20c997;
+     padding: 8vw;
+     height: 100vh;
+     /* box-sizing: border-box; */
  }
- input#postText.form-control.form-control-lg{
-     width: -webkit-fill-available;
+
+
+ .welcome{
+   color: black;
+   font-weight: bold;
+   font-size: xx-large;
+ }
+ #createAccount{
+   color:black;
+   margin-top: 10vw;
+ }
+ .input-form{
+   margin-bottom: 4vw;
+   font-size: 1.5rem;
+ }
+ #userLogin{
+   margin: 5vw;
  }
 
- #wall{
-     margin: 3vw;
+ .logoMain{
+   width: 70vw;
+   height: 36vw;
+   margin-top: 10vw;
+   margin-bottom: 10vw;
  }
 
- button#publishBtn.btn.btn-primary{
-    float: right;
-    margin-top: 2vw;
+ .input#emailLogin.form-control{
+   margin-bottom: 8vw;
  }
 
- #postArea{
-     margin-top: 15vw;
+@media screen and (min-width: 768px){
+ .welcome{
+   font-size: 2.5rem;
+   margin-top: 5rem;
+ }
+.input-form{
+ width: 50vw;
+ height: 5vh;
+ font-size: 2rem;
  }
 
- p.textPost{
-     font-size: 1.3rem;
+ .logoMain{
+   width: 70vw;
+   height: 36vw;
+   margin-top: 5vw;
+   margin-bottom: 4vw;
+ }
+ #createAccount{
+   margin-top: 5vw;
+ }
+ .btniPad{
+   height: unset;
+ }
+}
+
+
+@media screen and (min-width: 1280px){
+ /* #login{
+   height: 150vh;
+} */
+ .welcome{
+   font-size: 2rem;
+   margin-top: 1vw;
+ }
+.input-form{
+ height: 1.4rem;
+ font-size: 1.2rem;
+ margin-bottom: 2vh;
+ width: 25vw;
  }
 
- div.card.border-primary{
-    margin-bottom: 4vw;
-    padding: 2.5vw
+ .logoMain{
+   width: 30vw;
+   height: 15vw;
+   margin-top: 1vw;
+   margin-bottom: 1vw;
+}
+#userLogin{
+ margin: 2vw;
+
+}
+ #createAccount{
+   margin-top: 1vw;
  }
- body{
-     background: #ebf0e7;
+ .btniPad{
+   height: unset;
  }
-
-
-  /* ***********    LOGIN.HTML STYLE      ******* */
-
-  #login{
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-      background-color: #20c997;
-      padding: 8vw;
-     
-      /* box-sizing: border-box; */
-  }
-
-
-  .welcome{
-    color: black;
-    font-weight: bold;
-    font-size: xx-large;
-  }
-  #createAccount{
-    color:black;
-  }
-  .input-form{
-    margin-bottom: 4vw;
-  }
-  #userLogin{
-    margin: 5vw;
-  }
-
-  .logoMain{
-    width: 70vw;
-    height: 60vw;
-  }
- 
-  .input#emailLogin.form-control{
-    margin-bottom: 8vw;
-  }
- /*  #userLogin{
-    background-color: #20c997;
-  } */
+ input-form{
+   width: 20vw;
+ }
+}
 
 /*dar estilos a los inputs del registro*/
   .inputRegister{
