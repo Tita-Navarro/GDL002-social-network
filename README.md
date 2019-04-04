@@ -56,13 +56,26 @@ Con la información que recabamos con la encuesta que hicimos encontramos que el
 
 ## Problema que buscamos resolver
 
+El problema que nos percatamos que podemos resolver a los usuarios es que necesitan de una red de amigos, conocidos y gente que sabe de postres para así mismo los usuarios interesados puedan aumentar su conocimiento en los tipos de repostería que hay.
+
 ## Objetivo del usuario con mi producto
+
+El objetivo que buscamos que obtengan nuestros usuarios es el de apropiarse de un lugar que les dará información y crearán comunidad con otros usuarios que tienen un gusto en común que es cocinar postres.
 
 ## ¿Cómo el producto resuelve el problema?
 
+Podemos resolver el problema dando al usuario interesado en el tema de repostería un lugar exclusivo donde pueda obtener la información necesaria desde donde encontrar ingredientes, hasta el tutorial de como hacer un postre de su interés.
+
 ## Prioridad y principales funcionalidades
 
+La prioridad principal que buscamos con esto es conectar usuarios con un objetivo en común que es el de aprender y compartir repostería.
+
+Las principales funcionalidades en esta primera iteración es que el usuario pueda compartir sus mensajes, editarlos y eliminarlos.
+
+Las siguientes funcionalidades que se esperan en una segunda iteración es que el usuario pueda compartir imágenes y de ser posible vídeos y que los usuarios puedan agregar amigos y tener su propio perfil.
+
 ## ¿Cómo sé que el usuario usará el producto?
+
 
 ## Prototipado de baja fidelidad
 
