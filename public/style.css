@@ -10834,6 +10834,10 @@ legend {
   body{
       background: #ebf0e7;
   }
+  .homeImg{
+    width: 3rem;
+    height: 3rem;
+  }
   
   
    /* ***********    LOGIN.HTML STYLE      ******* */
@@ -10844,7 +10848,7 @@ legend {
        flex-direction: column;
        justify-content: center;
        text-align: center;
-       background-color: #20c997;
+       background-color: #78C2AD;
        padding: 8vw;
        height: 100vh;
        /* box-sizing: border-box; */
@@ -10878,7 +10882,16 @@ legend {
    .input#emailLogin.form-control{
      margin-bottom: 8vw;
    }
-  
+  button#btnRegister.btn.btn-primary{
+    background-color: #ff501e;
+  }
+  .modal-header{
+    background: #78C2AD;
+  }
+  .modal-title{
+    font-weight: bolder;
+  }
+
   @media screen and (min-width: 768px){
    .welcome{
      font-size: 2.5rem;
@@ -10914,7 +10927,7 @@ legend {
      margin-top: 1vw;
    }
   .input-form{
-   height: 1.4rem;
+   height: 2.4rem;
    font-size: 1.2rem;
    margin-bottom: 2vh;
    width: 25vw;
