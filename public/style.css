@@ -10958,6 +10958,9 @@ legend {
    input-form{
      width: 20vw;
    }
+   #wall{
+     margin-top: 8vw;
+   }
   }
   
   /*dar estilos a los inputs del registro*/
