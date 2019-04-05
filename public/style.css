@@ -10844,6 +10844,9 @@ legend {
     width: 3rem;
     height: 3rem;
   }
+  .textPost{
+    border-style: none;
+  }
   
   
    /* ***********    LOGIN.HTML STYLE      ******* */
@@ -10888,8 +10891,11 @@ legend {
    .input#emailLogin.form-control{
      margin-bottom: 8vw;
    }
-  button#btnRegister.btn.btn-primary{
-    background-color: #ff501e;
+  button#btnRegister.btn.btn-primary {
+    background-color: #ff4f1e9a;
+  }
+  button.btn.btn-secondary{
+    background-color: #78C2AD;
   }
   .modal-header{
     background: #78C2AD;
@@ -10920,6 +10926,9 @@ legend {
    }
    .btniPad{
      height: unset;
+   }
+   #wall{
+     margin-top: 15vw;
    }
   }
   
@@ -10965,5 +10974,14 @@ legend {
   
   /*dar estilos a los inputs del registro*/
     .inputRegister{
-      margin: 2vw;
+      margin: 0.5vw;
+      display:grid;
+      width: 15rem;
     }
+    .userRegister{
+      display: grid;
+    }
+    input.inputRegister{
+      margin-bottom: 2vw;
+    }
+    
