@@ -10847,6 +10847,9 @@ legend {
   .textPost{
     border-style: none;
   }
+  #btnLogOut{
+    background-color: #F3969A;
+  }
   
   
    /* ***********    LOGIN.HTML STYLE      ******* */
@@ -10891,6 +10894,19 @@ legend {
    .input#emailLogin.form-control{
      margin-bottom: 8vw;
    }
+   button.move{
+    width: 6vh;
+    font-size: 1rem;
+    height: 3rem;
+    vertical-align: middle;
+    margin: 1vw;
+    border-radius: 50%;
+    font-weight: 600;
+    margin-left: 85vw;
+   }
+   .aboutUs{
+     background-color: #78c2ad;
+   }
   button#btnRegister.btn.btn-primary {
     background-color: #ff4f1e9a;
   }
@@ -10902,6 +10918,10 @@ legend {
   }
   .modal-title{
     font-weight: bolder;
+  }
+  .about{
+    width: 10vh;
+    margin-left: 30vw;
   }
 
   @media screen and (min-width: 768px){
@@ -10930,7 +10950,16 @@ legend {
    #wall{
      margin-top: 15vw;
    }
+   button.move{
+     margin-left: 85vw;
+    font-size: 1.5rem;
+    height: 3.5rem;
+   }
+   .about{
+    width: 15vh;
+    margin-left: 13vw;
   }
+}
   
   
   @media screen and (min-width: 1280px){
@@ -10970,9 +10999,29 @@ legend {
    #wall{
      margin-top: 8vw;
    }
+   button.move{
+    width: 11vh;
+    font-size: 2.5rem;
+    height: 4.5rem;
+    vertical-align: middle;
+    margin: 1vw;
+    border-radius: 50%;
+   font-weight: 600;
+   margin-left: 92vw;
   }
+  .about{
+    width: 15vh;
+    margin-left: 13vw;
+  }
+  .about_us{
+    font-size: 1rem;
+    text-align: justify;
+    margin: 2vw;
+  }
+}
   
   /*dar estilos a los inputs del registro*/
+
     .inputRegister{
       margin: 0.5vw;
       display:grid;
@@ -10984,4 +11033,3 @@ legend {
     input.inputRegister{
       margin-bottom: 2vw;
     }
-    
