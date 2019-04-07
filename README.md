@@ -137,3 +137,13 @@ Además de agregar que el usuario pueda agregar imágenes en sus post para poder
 ## Resultados finales
 
 Aquí les mostramos algunas imágenes de nuestro primer resultado de esta red social llamada Mundo Dulce
+
+![Portada final](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/resultados1.jpg)
+
+![Modal Acerca de](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/resultados2.jpg)
+
+![Modal de registro](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/resultados3.jpg)
+
+![Muro de publicaciones](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/resultados4.jpg)
+
+![Menú del muro versión mobile](https://raw.githubusercontent.com/Tita-Navarro/GDL002-social-network/master/public/images/resultados5.jpg)
