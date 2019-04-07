@@ -115,14 +115,25 @@ Para llegar al prototipado en alta fidelidad buscamos y testeamos con usuarios l
 
 Para crear nuestras historias de usuario pusimos interés en lo que nuestros usuarios que contestaron la encuesta pidieron, nuestras historias de usuario son las siguientes:
 
-* El usuario necesita una pantalla de Login para iniciar sesión.
-* El usuario necesita una pantalla de inicio para tener la opción de registrarse en la aplicación o iniciar sesión según sea el caso.
-* El usuario necesita una pantalla de registro para introducir sus datos y crear una cuenta en la aplicación.
-* El usuario necesita una interfaz agradable,intuitiva, con colores relacionados a la temática de la aplicación.
-* El usuario necesita que la aplicación sea responsive para que pueda verla en pantallas de diferentes tamaños.
-* El usuario necesita un muro para interactuar en la red social.
-* El usuario necesita al momento de navegar por la aplicación no haya errores.
+- El usuario necesita una pantalla de Login para iniciar sesión.
+- El usuario necesita una pantalla de inicio para tener la opción de registrarse en la aplicación o iniciar sesión según sea el caso.
+- El usuario necesita una pantalla de registro para introducir sus datos y crear una cuenta en la aplicación.
+- El usuario necesita una interfaz agradable,intuitiva, con colores relacionados a la temática de la aplicación.
+- El usuario necesita que la aplicación sea responsive para que pueda verla en pantallas de diferentes tamaños.
+- El usuario necesita un muro para interactuar en la red social.
+- El usuario necesita al momento de navegar por la aplicación no haya errores.
 
 ## Pruebas con usuarios
 
+Al momento de hacer pruebas con los usuarios nos dimos cuenta que a la mayoría les atrajo el inside de porque creamos Mundo Dulce, los colores tranquilos con tonalidad pastel al usuario le agradaron ya que al verlos junto con el nombre de la red social lo asocian a postres.
+
+También les gusta el sentido de poder publicar sus recetas y poder tener un me gusta si a otros les agradó su receta.
+Los modales de registro y explicación acerca de nuestra red social fueron un acierto a nuestra primera iteración que a los usuarios agradó y dió un buen sentido a la página.
+
+Lo que buscamos mejorar para la siguiente iteración de nuestra red social es darle una separación al post de los botones de "me gusta", "editar" y "eliminar" para darle un diferenciador.
+
+Además de agregar que el usuario pueda agregar imágenes en sus post para poder hacer más agradable la presentación de una receta.
+
 ## Resultados finales
+
+Aquí les mostramos algunas imágenes de nuestro primer resultado de esta red social llamada Mundo Dulce
