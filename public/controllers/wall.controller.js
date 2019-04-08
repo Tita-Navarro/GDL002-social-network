@@ -61,8 +61,8 @@ const wallController = (rawTpl, outlet) => {
   let button = event.target;
   button.innerHTML = 'Guardar'
   button.onclick = function () {
-  const postText = document.getElementById('postText').value;
-  const updateText = {text:postText}
+  const newPost = document.getElementById('postText').value;
+  const updateText = {text:newPost}
   const postId = event.target.dataset.id;
   return firebase.database().ref(`/posts/${postId}`).update(updateText);
   }
