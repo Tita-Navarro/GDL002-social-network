@@ -1,4 +1,4 @@
-let pathPrefix = window.location.origin.indexOf(":5000") === -1 ? "/GDL002-social-network" : "";
+let pathPrefix = window.location.origin.indexOf(":5000") === -1 ? "/GDL002-social-network/public/index.html" : "";
 
 var Router = {
     routes: [],
